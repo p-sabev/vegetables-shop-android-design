@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductDetails">
+
+    <ImageView
+        android:id="@+id/details_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="30dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/details_text"
+        android:text="Vegetable"
+        android:textSize="45sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/details_description"
+        android:text="Description"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order now"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        />
+</LinearLayout>
