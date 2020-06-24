@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderProduct">
+
+    <ImageView
+        android:id="@+id/order_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="30dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/order_text"
+        android:text="Vegetable"
+        android:textSize="45sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/quantityText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Quantity" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"
+        android:hint="Enter quantity"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="text">
+    </EditText>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Date for delivery" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:hint="Enter date"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="date">
+    </EditText>
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Additional message" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:hint="Enter message"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="text">
+    </EditText>
+
+    <Button
+        android:id="@+id/orderNowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send order"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        />
+</LinearLayout>
